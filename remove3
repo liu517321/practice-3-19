@@ -1,0 +1,17 @@
+import java.util.Scanner;
+ 
+/**
+ * 使用正则表达式解题
+ */
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        while (s.hasNext())
+        {
+            String s1 = s.nextLine();
+            String s2 = s.nextLine();
+            String del = "["+s2+"]"; // 字符串类型的正则表达式
+            System.out.println(s1.replaceAll(del, ""));
+        }
+    }
+}
